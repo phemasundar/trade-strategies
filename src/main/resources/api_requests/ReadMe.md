@@ -1,0 +1,1 @@
+##This folder is to keep the template files for API InPut requests in .json format

@@ -1,0 +1,10 @@
+{
+  "commonUser": {
+    "ssoUserName": "svc-pda-automation",
+    "ssoPassword": "qZgQA*&eMBjNym"
+  },
+  "nexusUser": {
+    "ssoUserName": "",
+    "ssoPassword": ""
+  }
+}

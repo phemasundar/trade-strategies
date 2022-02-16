@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "status": "error",
+    "name": "JSONConfigDemo",
+    "packages": "com.howtodoinjava",
+    "ThresholdFilter": {
+      "level": "debug"
+    },
+    "CustomLevels": {
+      "CustomLevel": {
+        "name": "BET_WON",
+        "intLevel": "50"
+      }
+    },
+    "appenders": {
+      "Console": {
+        "name": "STDOUT",
+        "PatternLayout": {
+          "pattern": "%d{HH:mm:ss} %-5p %c{1} : %m%n"
+        }
+      },
+      "RollingFile": {
+        "name": "File",
+        "fileName": "target/surefire-reports/log.log",
+        "filePattern": "logs/backup-%d{MM-dd-yy-HH-mm-ss}-%i.log.gz",
+        "PatternLayout": {
+          "pattern": "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+        },
+        "Policies": {
+          "SizeBasedTriggeringPolicy": {
+            "size": "100 MB"
+          }
+        },
+        "DefaultRolloverStrategy": {
+          "max": "10"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "debug",
+        "AppenderRef": [
+          {
+            "ref": "STDOUT",
+            "level": "info"
+          }
+        ]
+      }
+    }
+  }
+}

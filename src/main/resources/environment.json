@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "name": "DEV",
+    "authorization": "api authorization",
+    "baseURL": "api base url"
+  },
+  "prod": {
+    "name": "PROD",
+    "authorization": "api authorization",
+    "baseURL": "api base url"
+  }
+}

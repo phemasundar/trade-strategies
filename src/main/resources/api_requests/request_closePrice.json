@@ -1,0 +1,13 @@
+{
+  "symbols": {
+    "tickers": [
+      ${NSE_CODES}
+    ],
+    "query": {
+      "types": []
+    }
+  },
+  "columns": [
+    "close"
+  ]
+}

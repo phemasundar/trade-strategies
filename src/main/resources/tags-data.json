@@ -1,0 +1,18 @@
+{
+  "allTags": [
+    {
+      "name": "LONG_TERM",
+      "stocks": [
+        "TATAELXSI",
+        "IEX"
+      ]
+    },
+    {
+      "name": "SWING_TRADE",
+      "stocks": [
+        "LTTS",
+        "SAREGAMA"
+      ]
+    }
+  ]
+}

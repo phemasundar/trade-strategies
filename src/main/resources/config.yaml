@@ -1,0 +1,35 @@
+implicitTimeOut: 1
+explicitTimeOut: 40
+explicitTimeOutType2: 3
+testExecutionEnvironment: LOCAL
+#testExecutionEnvironment: SAUCE
+appEnvironment: DEV
+#appEnvironment: PROD
+
+#TODO: Need to Remove
+browser: chrome
+#device: DESKTOP
+device: MOBILE
+operatingSystem: ANDROID
+#deviceType: IOS
+#operatingSystem: MAC
+browserType: NATIVE
+#browserType: CHROME
+sauceLabURL: https://UserName:813891dc-f31d-44cc-8e4c-80398a34a045@ondemand.saucelabs.com:443/wd/hub
+testObjectURL: https://us1.appium.testobject.com/wd/hub
+authorization: api bearer authorization
+slackReport: false
+videoRecord: true
+logCatLogs: true
+serverLogs: true
+clientLogs: true
+screenshots: false
+inbuiltAppiumServer: true
+appiumExecFile: default
+appiumLogFileName: AppiumLog.txt
+
+#######################################################################################################################
+#                       API FLOW TEST
+#######################################################################################################################
+api_channel: APP
+api_platform: android
