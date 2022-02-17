@@ -17,9 +17,7 @@
     { "kite": "CLEDUCATE", "nse":"", "bse": "540403" },
     { "kite": "DEEPAKNI", "nse":"", "bse": "506401" },
     { "kite": "DTIL", "nse":"", "bse": "538902" },
-    { "kite": "EVERESTIND", "nse":"", "bse": "508906" },
     { "kite": "EXPLEOSOL", "nse":"", "bse": "533121" },
-    { "kite": "FEDERALBNK", "nse":"", "bse": "500469" },
     { "kite": "FERMENTA", "nse":"", "bse": "506414" },
     { "kite": "GAIL", "nse":"", "bse": "532155" },
     { "kite": "GOLDIAM", "nse":"", "bse": "526729" },
@@ -76,7 +74,6 @@
     { "kite": "TCPLPACK", "nse":"", "bse": "523301" },
     { "kite": "TIPSINDLTD", "nse":"", "bse": "532375" },
     { "kite": "TVSELECT", "nse":"", "bse": "532513" },
-    { "kite": "TVSMOTOR", "nse":"", "bse": "532343" },
     { "kite": "UNIVSTAR", "nse":"", "bse": "524408" },
     { "kite": "WELCORP", "nse":"", "bse": "532144" },
     { "kite": "ZENTEC", "nse":"", "bse": "533339" }
@@ -96,6 +93,9 @@
     { "kite": "", "nse":"", "bse": "" }
   ],
   "exited": [
+    { "kite": "TVSMOTOR", "nse":"", "bse": "532343" },
+    { "kite": "FEDERALBNK", "nse":"", "bse": "500469" },
+    { "kite": "EVERESTIND", "nse":"", "bse": "508906" },
     { "kite": "BORORENEW", "nse":"", "bse": "502219" },
     { "kite": "DIXON", "nse":"", "bse": "540699" },
     { "kite": "NEWGEN", "nse":"", "bse": "540900" },
