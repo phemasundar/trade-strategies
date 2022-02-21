@@ -12,6 +12,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -39,9 +40,9 @@ public enum SecuritiesList implements SecuritiesListFunctions {
     },PORTFOLIO_EXITED_SECURITIES_BSE {
         @Override
         public List<String> getSecuritiesList() throws JsonProcessingException {
-            PortfolioList portfolioList = PortfolioList.getPortfolioListObj();
 
-            return Stream.concat(PortfolioList.getBsePortfolioSecurities().stream(), PortfolioList.getBseExitedSecurities().stream())
+            return Stream.of(PortfolioList.getBsePortfolioSecurities(), PortfolioList.getBseExitedSecurities(), PortfolioList.getBseBlueChipSecurities())
+                    .flatMap(Collection::stream)
                     .collect(Collectors.toList());
         }
     }, ALL_INDEX_SECURITIES_NSE {

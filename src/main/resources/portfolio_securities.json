@@ -102,6 +102,7 @@
     { "kite": "CAMS", "nse":"", "bse": "543232" },
     { "kite": "ZENSARTECH", "nse":"", "bse": "504067" },
     { "kite": "NAUKRI", "nse":"", "bse": "532777" },
+    { "kite": "LAURUSLABS", "nse":"LAURUSLABS", "bse": "540222" },
     { "kite": "", "nse":"", "bse": "" },
     { "kite": "", "nse":"KOTAKBANK", "bse": "500247" },
     { "kite": "", "nse":"SUNTV", "bse": "532733" },

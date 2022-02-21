@@ -55,6 +55,14 @@ public class PortfolioList {
                 .filter(item -> !item.isBlank())
                 .collect(Collectors.toList());
     }
+
+    public static List<String> getBseBlueChipSecurities () throws JsonProcessingException {
+        return getPortfolioListObj().getBlueChips()
+                .stream()
+                .map(PortfolioList.StockSymbols::getBse)
+                .filter(item -> !item.isBlank())
+                .collect(Collectors.toList());
+    }
 }
 
 
