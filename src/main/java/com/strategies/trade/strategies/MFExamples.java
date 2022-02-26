@@ -3,8 +3,10 @@ package com.strategies.trade.strategies;
 import com.zerodhatech.kiteconnect.KiteConnect;
 import com.zerodhatech.kiteconnect.kitehttp.exceptions.KiteException;
 import com.zerodhatech.kiteconnect.utils.Constants;
-import com.zerodhatech.models.*;
-import com.zerodhatech.ticker.*;
+import com.zerodhatech.models.MFHolding;
+import com.zerodhatech.models.MFInstrument;
+import com.zerodhatech.models.MFOrder;
+import com.zerodhatech.models.MFSIP;
 
 import java.io.IOException;
 import java.util.List;

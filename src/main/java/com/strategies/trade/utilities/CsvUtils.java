@@ -31,12 +31,24 @@ public class CsvUtils {
     }
 
     public static List<List<String>> getSheetData(String filePath) throws IOException {
-        List<List<String>> data = Files.lines(Paths.get(filePath))
+        return getSheetData(filePath, 0);
+    }
+
+    public static List<List<String>> getSheetData(String filePath, int numberOfHeaderRows) throws IOException {
+
+        return Files.lines(Paths.get(filePath))
+                .skip(numberOfHeaderRows)
                 .filter(item -> !item.isEmpty())
                 .map(line -> Arrays.asList(line.split(",")))
                 .collect(Collectors.toList());
+    }
 
-        return data;
+    public static List<String> getFirstColumnInSheet(String filePath, int numberOfHeaderRows) throws IOException {
+
+        return CsvUtils.getSheetData(filePath, numberOfHeaderRows)
+                .stream()
+                .map(item -> item.get(0))
+                .collect(Collectors.toList());
     }
 
     public static void appendSheet(String filePath, List<List<String>> sheetData) throws IOException {

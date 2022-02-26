@@ -3,7 +3,8 @@ package com.strategies.trade.strategies;
 import com.zerodhatech.kiteconnect.KiteConnect;
 import com.zerodhatech.kiteconnect.kitehttp.SessionExpiryHook;
 import com.zerodhatech.kiteconnect.kitehttp.exceptions.KiteException;
-import com.zerodhatech.models.*;
+import com.zerodhatech.models.Profile;
+import com.zerodhatech.models.User;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 

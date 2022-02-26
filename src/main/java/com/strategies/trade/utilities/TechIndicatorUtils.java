@@ -3,6 +3,7 @@ package com.strategies.trade.utilities;
 import com.strategies.trade.api_test_beans.CandleStick;
 import com.strategies.trade.api_test_beans.ImprovedCandleStick;
 import com.strategies.trade.api_utils.ApiRequests;
+import com.strategies.trade.test_data_beans.Exchange;
 import com.strategies.trade.test_data_beans.FilePaths;
 
 import java.io.IOException;
@@ -140,7 +141,7 @@ public class TechIndicatorUtils {
 
     public static void writeOrUpdateHistoricalData(List<String> allSecurities) throws IOException {
         for (String currentSecurity : allSecurities) {
-            String csvFileName = FilePaths.HISTORICAL_DATA_FOLDER_PATH + currentSecurity + ".csv";
+            String csvFileName = Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + currentSecurity + ".csv";
 
             LocalDate endDateObj = LocalDate.now();
             List<CandleStick> latestHistoricalDataObject = new ArrayList<>();
@@ -164,9 +165,8 @@ public class TechIndicatorUtils {
             if (Files.exists(Paths.get(csvFileName))) {
                 // Get current security historical data
                 // List<CandleStick> historicalCandleSticksBySecurity = JavaUtils.deSerialize(FilePaths.HISTORICAL_DATA_FOLDER_PATH + currentSecurity, CandleStick.class);
-                latestHistoricalDataObject = CsvUtils.getSheetData(csvFileName)
+                latestHistoricalDataObject = CsvUtils.getSheetData(csvFileName, 1)
                         .stream()
-                        .skip(1)
                         .map(CandleStick::new)
                         .collect(Collectors.toList());
 

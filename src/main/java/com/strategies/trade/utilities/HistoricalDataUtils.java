@@ -1,19 +1,18 @@
 package com.strategies.trade.utilities;
 
-import com.strategies.trade.api_test_beans.*;
+import com.strategies.trade.api_test_beans.CandleStick;
+import com.strategies.trade.api_test_beans.ImprovedCandleStick;
 import com.strategies.trade.api_utils.ApiRequests;
 import com.strategies.trade.test_data_beans.Exchange;
 import com.strategies.trade.test_data_beans.FilePaths;
-import com.strategies.trade.test_data_beans.SecuritiesList;
+import com.strategies.trade.test_data_beans.Securities;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.Period;
+import java.time.*;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -22,9 +21,10 @@ import java.util.stream.Collectors;
  * @author hemasundarpenugonda
  */
 public class HistoricalDataUtils {
-    public static List<List<CandleStick>> getBseDataInJavaObjects(SecuritiesList securitiesList) throws IOException {
-        List<String> securitiesList1 = securitiesList.getSecuritiesList();
-        Collection<List<CandleStick>> values = Files.list(Paths.get(FilePaths.EXTRACTED_OUTPUT_FOLDER_PATH))
+    public static List<List<CandleStick>> getBseDataInJavaObjects(List<String> securitiesList) throws IOException {
+        Instant start = Instant.now();
+
+        Collection<List<CandleStick>> values = Files.list(Paths.get(Exchange.BSE.getDataFolderPath() + FilePaths.DAILY_EXTRACTED_FILES_FOLDER))
                 .filter(Files::isRegularFile)
                 .map(item -> {
                     try {
@@ -43,7 +43,7 @@ public class HistoricalDataUtils {
                 .stream()
                 .filter(item -> {
                     try {
-                        return securitiesList1.contains(item.get(0).getSymbol());
+                        return securitiesList.contains(item.get(0).getSymbol());
                     } catch (DateTimeParseException e) {
                         e.printStackTrace();
                         System.out.println();
@@ -51,21 +51,21 @@ public class HistoricalDataUtils {
                     }
                 })
                 .collect(Collectors.toList());
+        CustomLogging.writeLog("Time taken for reading BSE data " + Duration.between(start, Instant.now()).getSeconds());
+
         return allData;
 
     }
 
-    public static List<List<CandleStick>> readNSEHistoricalData(SecuritiesList securitiesList) throws IOException {
+    public static List<List<CandleStick>> readNSEHistoricalData(List<String> allSecurities) throws IOException {
 
-        List<String> allSecurities = securitiesList.getSecuritiesList();
         List<List<CandleStick>> allHistoricalCandleSticks = new ArrayList<>();
 
         for (String currentSecurity : allSecurities) {
-            String excelFileName = FilePaths.HISTORICAL_DATA_FOLDER_PATH + currentSecurity + ".csv";
+            String excelFileName = Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + currentSecurity + ".csv";
 //            List<CandleStick> historicalCandleSticks = JavaUtils.deSerialize(FilePaths.HISTORICAL_DATA_FOLDER_PATH + currentSecurity, CandleStick.class);
-            List<List<String>> sheetData = CsvUtils.getSheetData(excelFileName);
+            List<List<String>> sheetData = CsvUtils.getSheetData(excelFileName, 1);
             List<CandleStick> historicalCandleSticks = sheetData.stream()
-                    .skip(1)
                     .map(CandleStick::new)
                     .collect(Collectors.toList());
 
@@ -76,7 +76,7 @@ public class HistoricalDataUtils {
 
     }
 
-    public static void percentageChangeOverTime(Exchange exchange, SecuritiesList securitiesList, LocalDate date) throws IOException, ClassNotFoundException {
+    public static void percentageChangeOverTime(Exchange exchange, Securities securityType, String indexName, LocalDate date) throws IOException, ClassNotFoundException {
         Period duration = Period.between(LocalDate.now(), date);
         List<List<String>> list = new ArrayList<>();
         list.add(new ArrayList<>(Arrays.asList("Symbol",
@@ -91,7 +91,7 @@ public class HistoricalDataUtils {
                 " % Up from Low",
                 " % Down from Max",
                 " % Change from last " + duration)));
-        List<List<CandleStick>> historicalCandleSticks = exchange.getHistoricalData(securitiesList);
+        List<List<CandleStick>> historicalCandleSticks = exchange.getHistoricalData(securityType, indexName);
         List<List<CandleStick>> historicalCandleSticksFromDate = CandleStick.getDataFromDateForListOfScrips(historicalCandleSticks, date);
         List<String> allSymbolNames = CandleStick.getAllSymbolNames(historicalCandleSticks);
         for (List<CandleStick> indHistoryData : historicalCandleSticksFromDate) {
@@ -110,7 +110,7 @@ public class HistoricalDataUtils {
             double latestCloseValue;
             //Get last traded price
             CandleStick latestCandle = CandleStick.getLatestCandle(indHistoryData);
-            if (securitiesList == SecuritiesList.ALL_INDEX_SECURITIES_NSE || securitiesList == SecuritiesList.ALL_BSE) {
+            if (securityType == Securities.ALL) {
                 latestCloseValue = latestCandle.getClosePrice();
             } else {
                 latestCloseValue = Double.parseDouble(Objects.requireNonNull(ApiRequests.getGoogleFinanceClosePrice(exchange, latestCandle.getSymbol())));
@@ -157,16 +157,16 @@ public class HistoricalDataUtils {
         Files.write(Paths.get("percentageChangesIn" + duration + ".csv"), collect.getBytes());
     }
 
-    public static void percentageChangeFromNumberOfMonths(Exchange exchange, SecuritiesList securitiesList, int months) throws IOException, ClassNotFoundException {
-        percentageChangeOverTime(exchange, securitiesList, LocalDate.now().minusMonths(months));
+    public static void percentageChangeFromNumberOfMonths(Exchange exchange, Securities securityType, String indexName, int months) throws IOException, ClassNotFoundException {
+        percentageChangeOverTime(exchange, securityType, indexName, LocalDate.now().minusMonths(months));
     }
 
-    public static void percentageChangeFromNumberOfWeeks(Exchange exchange, SecuritiesList securitiesList, int weeks) throws IOException, ClassNotFoundException {
-        percentageChangeOverTime(exchange, securitiesList, LocalDate.now().minusWeeks(weeks));
+    public static void percentageChangeFromNumberOfWeeks(Exchange exchange, Securities securityType, String indexName, int weeks) throws IOException, ClassNotFoundException {
+        percentageChangeOverTime(exchange, securityType, indexName, LocalDate.now().minusWeeks(weeks));
     }
 
-    public static void percentageChangeForCurrentWeek(Exchange exchange, SecuritiesList securitiesList) throws IOException, ClassNotFoundException {
-        percentageChangeOverTime(exchange, securitiesList, LocalDate.now().with(DayOfWeek.MONDAY));
+    public static void percentageChangeForCurrentWeek(Exchange exchange, Securities securityType, String indexName) throws IOException, ClassNotFoundException {
+        percentageChangeOverTime(exchange, securityType, indexName, LocalDate.now().with(DayOfWeek.MONDAY));
     }
 
     public static List<List<ImprovedCandleStick>> saveEma(List<List<ImprovedCandleStick>> historicalImprovedCandleSticks, int interval) throws IOException, ClassNotFoundException {

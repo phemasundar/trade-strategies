@@ -1,5 +1,6 @@
 package com.strategies.trade.utilities;
 
+import com.strategies.trade.test_data_beans.Exchange;
 import com.strategies.trade.test_data_beans.FilePaths;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
@@ -161,13 +162,13 @@ public class ExcelUtils {
 
     //        @Test
     public void test() throws IOException, InvalidFormatException {
-        Workbook workBook = ExcelUtils.getWorkBook(FilePaths.HISTORICAL_DATA_FOLDER_PATH + "HistoricalData.xlsx");
+        Workbook workBook = ExcelUtils.getWorkBook(Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + "HistoricalData.xlsx");
         Sheet sheet = ExcelUtils.getSheet(workBook, "Test1");
         List<List<String>> collect = new ArrayList<>();
         collect.add(Arrays.asList("Test1", "Test2"));
         collect.add(Arrays.asList("Test3", "Test4"));
         Sheet rows = ExcelUtils.writeSheet(sheet, collect);
-        ExcelUtils.writeExcel(workBook, FilePaths.HISTORICAL_DATA_FOLDER_PATH + "HistoricalData.xlsx");
+        ExcelUtils.writeExcel(workBook, Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + "HistoricalData.xlsx");
 
     }
 }

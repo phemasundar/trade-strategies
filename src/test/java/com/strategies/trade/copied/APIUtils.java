@@ -1,30 +1,20 @@
 package com.strategies.trade.copied;
 
-import com.strategies.trade.api_test_beans.*;
-import com.strategies.trade.api_utils.ApiRequests;
+import com.strategies.trade.api_test_beans.CandleStick;
+import com.strategies.trade.api_test_beans.ImprovedCandleStick;
 import com.strategies.trade.test_data_beans.Exchange;
 import com.strategies.trade.test_data_beans.FilePaths;
-import com.strategies.trade.test_data_beans.SecuritiesList;
+import com.strategies.trade.test_data_beans.Securities;
 import com.strategies.trade.utilities.HistoricalDataUtils;
 import com.strategies.trade.utilities.JavaUtils;
 import com.strategies.trade.utilities.TechIndicatorUtils;
 import com.strategies.trade.utilities.Tested;
-import net.lingala.zip4j.ZipFile;
-import net.lingala.zip4j.exception.ZipException;
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @author hemasundarpenugonda
@@ -34,24 +24,26 @@ public class APIUtils {
     @Test
     @Tested
     public void percentageChangesFromMonths() throws IOException, ClassNotFoundException {
-        HistoricalDataUtils.percentageChangeFromNumberOfMonths(Exchange.BSE, SecuritiesList.PORTFOLIO_EXITED_SECURITIES_BSE, 2);
+        HistoricalDataUtils.percentageChangeFromNumberOfMonths(Exchange.BSE, Securities.INDEX, "S&P BSE 500", 2);
     }
 
     @Test
     @Tested
     public void percentageChangesFromWeeks() throws IOException, ClassNotFoundException {
-        HistoricalDataUtils.percentageChangeFromNumberOfWeeks(Exchange.BSE, SecuritiesList.PORTFOLIO_SECURITIES_BSE, 1);
+        HistoricalDataUtils.percentageChangeFromNumberOfWeeks(Exchange.BSE, Securities.PORTFOLIO, "", 1);
     }
 
     @Test
     @Tested
     public void percentageChangesForCurrentWeek() throws IOException, ClassNotFoundException {
-        HistoricalDataUtils.percentageChangeForCurrentWeek(Exchange.BSE, SecuritiesList.PORTFOLIO_SECURITIES_BSE);
+        HistoricalDataUtils.percentageChangeForCurrentWeek(Exchange.BSE, Securities.PORTFOLIO, "");
     }
 
     @Test
     public void fillTechIndicators() throws IOException, ClassNotFoundException {
-        List<List<CandleStick>> historicalCandleSticks = HistoricalDataUtils.readNSEHistoricalData(SecuritiesList.PORTFOLIO_SECURITIES_NSE);
+        List<String> securitiesList = Exchange.NSE.getSecuritiesList(Securities.PORTFOLIO, "");
+
+        List<List<CandleStick>> historicalCandleSticks = HistoricalDataUtils.readNSEHistoricalData(securitiesList);
         List<List<ImprovedCandleStick>> historicalImprovedCandleSticks = TechIndicatorUtils.convert(historicalCandleSticks);
 
         historicalImprovedCandleSticks = HistoricalDataUtils.saveEma(historicalImprovedCandleSticks, 21);
@@ -65,7 +57,7 @@ public class APIUtils {
 
         historicalImprovedCandleSticks.stream()
                 .forEach(item ->
-                        JavaUtils.serialize(FilePaths.HISTORICAL_DATA_FOLDER_PATH + CandleStick.getSymbol(item), item));
+                        JavaUtils.serialize(Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + CandleStick.getSymbol(item), item));
     }
 
     @Test

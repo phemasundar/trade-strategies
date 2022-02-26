@@ -1,6 +1,7 @@
 package com.strategies.trade.copied;
 
 import com.strategies.trade.api_test_beans.NSECandleStick;
+import com.strategies.trade.test_data_beans.Exchange;
 import com.strategies.trade.test_data_beans.FilePaths;
 import com.strategies.trade.utilities.JavaUtils;
 import com.zerodhatech.kiteconnect.kitehttp.exceptions.KiteException;
@@ -74,7 +75,7 @@ public class MovingMomentumStrategy {
 //                .map(item -> new BaseBar(Duration.ofMinutes(15), ZonedDateTime.parse(item.timeStamp), item.open, item.high, item.low, item.close, item.volume))
 //                .collect(Collectors.toList());
 
-        List<Bar> collect = JavaUtils.deSerialize(FilePaths.HISTORICAL_DATA_FOLDER_PATH + "IDFCFIRSTB", NSECandleStick.class).stream()
+        List<Bar> collect = JavaUtils.deSerialize(Exchange.NSE.getDataFolderPath() + FilePaths.HISTORICAL_DATA_FOLDER + "IDFCFIRSTB", NSECandleStick.class).stream()
                 .map(item -> new BaseBar(Duration.ofHours(6), ZonedDateTime.of((item).getDate(), LocalTime.of(15, 30), ZoneId.of("Asia/Kolkata")), item.getOpenPrice(), item.getHighPrice(), item.getLowPrice(), item.getClosePrice(), item.getDeliverableQty()))
                 .collect(Collectors.toList());
 

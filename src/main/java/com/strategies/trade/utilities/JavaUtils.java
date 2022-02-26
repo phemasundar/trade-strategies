@@ -6,8 +6,6 @@ import java.math.RoundingMode;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -249,5 +247,14 @@ public class JavaUtils {
             e.printStackTrace();
         }
         return content;
+    }
+
+    public static Path getLatestModifiedFileFromFolder(String folderPath) throws IOException {
+        Path latestDailyReportFilePath = Files.list(Paths.get(folderPath))
+                .filter(Files::isRegularFile)
+                .sorted((p1, p2) -> Long.compare(p2.toFile().lastModified(), p1.toFile().lastModified()))
+                .findFirst()
+                .get();
+        return latestDailyReportFilePath;
     }
 }

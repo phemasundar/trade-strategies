@@ -1,10 +1,9 @@
 package com.strategies.trade.copied;
 
 import com.neovisionaries.ws.client.WebSocketException;
-import com.strategies.trade.api_utils.ApiRequests;
 import com.strategies.trade.strategies.*;
 import com.strategies.trade.test_data_beans.CustomOrderParams;
-import com.strategies.trade.test_data_beans.Exchange;
+import com.strategies.trade.utilities.CsvUtils;
 import com.zerodhatech.kiteconnect.KiteConnect;
 import com.zerodhatech.kiteconnect.kitehttp.exceptions.KiteException;
 import com.zerodhatech.kiteconnect.utils.Constants;
@@ -14,10 +13,8 @@ import org.json.JSONException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by sujith on 7/10/16.
@@ -171,6 +168,24 @@ public class Test {
         } catch (JSONException | WebSocketException | IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @org.testng.annotations.Test
+    public void testMethod() throws IOException {
+        List<List<String>> sheetData = CsvUtils.getSheetData("/Users/hemasundarpenugonda/Downloads/TbDecom Live Store List1.csv", 1);
+        Map<String, String> collect = sheetData.stream()
+                .filter(item -> item.get(5).trim().equalsIgnoreCase("Phase 4"))
+                .collect(Collectors.groupingBy(item -> item.get(2), Collectors.mapping(item -> item.get(3), Collectors.joining(", "))));
+        TreeMap<String, String> treeMapObj = new TreeMap<>(collect);
+        treeMapObj.forEach((key, value) -> {
+            System.out.println(key + ":");
+            System.out.println("        Stores - " + value);
+            System.out.println();
+        });
+
+        Long collect1 = treeMapObj.values().stream()
+                .map(item -> Arrays.stream(item.split(",")).count()).mapToLong(item -> item).sum();
+        System.out.println("Total stores count: " + collect1);
     }
 
 }

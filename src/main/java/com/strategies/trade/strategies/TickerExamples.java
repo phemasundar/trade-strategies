@@ -3,7 +3,8 @@ package com.strategies.trade.strategies;
 import com.neovisionaries.ws.client.WebSocketException;
 import com.zerodhatech.kiteconnect.KiteConnect;
 import com.zerodhatech.kiteconnect.kitehttp.exceptions.KiteException;
-import com.zerodhatech.models.*;
+import com.zerodhatech.models.Order;
+import com.zerodhatech.models.Tick;
 import com.zerodhatech.ticker.*;
 
 import java.io.IOException;

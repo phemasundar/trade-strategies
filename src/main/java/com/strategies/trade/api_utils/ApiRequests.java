@@ -96,6 +96,24 @@ public class ApiRequests {
         }
     }
 
+    public static CustomResponse<BseIndexResponse> getBseIndexDetails(String indexName) throws IOException {
+        indexName = indexName.replace(" ", "%20");
+        indexName = indexName.replace("&", "%26");
+
+        HashMap<String, String> headers = new HashMap<>();
+
+        HttpResponse response = RestApiUtils.sendingGetRequest("https://api.bseindia.com/BseIndiaAPI/api/GetMktData/w?ordcol=NS&strType=index&strfilter="+indexName, headers);
+
+        int statusCode = response.getStatusLine().getStatusCode();
+        System.out.println(statusCode);
+        if (statusCode == 200) {
+            CustomResponse<BseIndexResponse> indexResponseCustomResponse = new CustomResponse<>(response, BseIndexResponse.class);
+            return indexResponseCustomResponse;
+        } else {
+            throw new RuntimeException(RestApiUtils.getResponse(response));
+        }
+    }
+
     public static CustomResponse<IndicesList> getIndicesList() throws IOException {
 
         HashMap<String, String> headers = new HashMap<>();
@@ -111,6 +129,25 @@ public class ApiRequests {
         System.out.println(statusCode);
         if (statusCode == 200) {
             CustomResponse<IndicesList> indicesListCustomResponse = new CustomResponse<>(response, IndicesList.class);
+
+            return indicesListCustomResponse;
+        } else {
+            throw new RuntimeException("API request failed");
+        }
+    }
+
+    public static CustomResponse<BseIndicesList> getBseIndicesList() throws IOException {
+
+        HashMap<String, String> headers = new HashMap<>();
+        HashMap<String, String> params = new HashMap<>();
+        params.put("json", "{\"flag\":\"\",\"ln\":\"en\",\"pg\":\"1\",\"cnt\":\"100\",\"fields\":\"1,2,3,4,5,6,7,8\",\"hmpg\":\"1\"}");
+
+        HttpResponse response = RestApiUtils.sendingGetRequest("https://api.bseindia.com/bseindia/api/Indexmasternew/GetData", headers, params);
+
+        int statusCode = response.getStatusLine().getStatusCode();
+        System.out.println(statusCode);
+        if (statusCode == 200) {
+            CustomResponse<BseIndicesList> indicesListCustomResponse = new CustomResponse<>(response, BseIndicesList.class);
 
             return indicesListCustomResponse;
         } else {
