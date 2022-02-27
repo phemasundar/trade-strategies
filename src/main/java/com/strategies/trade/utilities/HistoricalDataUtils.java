@@ -35,25 +35,30 @@ public class HistoricalDataUtils {
                     return null;
                 })
                 .filter(Objects::nonNull)
-                .map(item -> item.stream().skip(1).filter(item1 -> item1.size()>=16).map(item1 -> new CandleStick(Arrays.asList(item1.get(0), item1.get(1), item1.get(15), item1.get(9), item1.get(4), item1.get(5), item1.get(6), item1.get(8), item1.get(7), item1.get(12), item1.get(10)))).collect(Collectors.toList()))
-                .flatMap(List::stream)
-                .collect(Collectors.groupingBy(item -> item.getSymbol())).values();
+                .map(item ->
+                                item.stream()
+                                        .skip(1)
+                                        .filter(item1 -> item1.size() >= 16)
+                                        .filter(item1 -> {
+                                            try {
+//                                                return securitiesList.contains(item1.getSymbol());
+                                                return securitiesList.contains(item1.get(0));
+                                            } catch (DateTimeParseException e) {
+                                                e.printStackTrace();
+                                                System.out.println();
+                                                return false;
+                                            }
+                                        })
+                                        .map(item1 -> new CandleStick(new String[]{item1.get(0), item1.get(1), item1.get(15), item1.get(9), item1.get(4), item1.get(5), item1.get(6), item1.get(8), item1.get(7), item1.get(12), item1.get(10)}))
 
-        List<List<CandleStick>> allData = new ArrayList<>(values)
-                .stream()
-                .filter(item -> {
-                    try {
-                        return securitiesList.contains(item.get(0).getSymbol());
-                    } catch (DateTimeParseException e) {
-                        e.printStackTrace();
-                        System.out.println();
-                        return false;
-                    }
-                })
-                .collect(Collectors.toList());
+                )
+                .flatMap(item -> item)
+                .collect(Collectors.groupingBy(item -> item.getSymbol())).values();
+        List<List<CandleStick>> allData = new ArrayList<>(values);
+
         CustomLogging.writeLog("Time taken for reading BSE data " + Duration.between(start, Instant.now()).getSeconds());
 
-        return allData;
+         return allData;
 
     }
 

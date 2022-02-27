@@ -57,6 +57,24 @@ public class CandleStick implements Serializable, Comparable<CandleStick> {
             e.printStackTrace();
         }
     }
+    public CandleStick(String[] item) {
+        try {
+            setSymbol(item[0]);
+            setName(item[1]);
+            setDate(item[2]);
+            setPrevClose(item[3]);
+            setOpenPrice(item[4]);
+            setHighPrice(item[5]);
+            setLowPrice(item[6]);
+            setLastPrice(item[7]);
+            setClosePrice(item[8]);
+            setTurnOverInRs(item[9]);
+            setNumberOfTrades(item[10]);
+        } catch (IndexOutOfBoundsException | DateTimeParseException e) {
+            System.out.println(item);
+            e.printStackTrace();
+        }
+    }
 
     public CandleStick(CandleStick item) {
         try {
