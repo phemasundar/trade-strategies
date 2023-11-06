@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_010119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_010221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_010421.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_010620.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_010621.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_011021.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_011121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_011221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_020222.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_020819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_020821.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_020921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_030122.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_030220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_030320.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_030420.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_030620.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_031219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_031221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040619.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_040920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_041119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_041219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_050121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_050521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_050721.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_050821.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_051021.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_060120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_060220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_060820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_060921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_061219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070319.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070420.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070520.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_070820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_071020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_071220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080319.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_080920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_090419.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_090921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_091020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_091121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_091219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_091221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_100719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_100720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_100821.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_101120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_101220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_101221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_110122.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_110821.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_110920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_111119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_111220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_120219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_120319.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_120320.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_120321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_120520.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_121020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_130121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_130122.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_130819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_130919.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_131119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_131219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_140122.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_140222.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_140521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_140921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_141021.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_141221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_150120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_150121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_150221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_150519.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_150920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_151220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_160222.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_160419.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_160420.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_160620.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_160920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_161019.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_161020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_170221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_170321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_170621.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_171120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_171121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_171219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_180520.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_180521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_180619.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_180621.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_180820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_181220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_190219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_190220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_200121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_200421.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_200520.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_200721.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_201120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210519.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_210820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_211020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_211021.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220319.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220421.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220620.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_220819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_221220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_221221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_230222.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_230320.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_230621.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_230821.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_230921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_231120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_231221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_240119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_240120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_240221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_241019.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_250220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_250419.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_250619.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_250820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_250920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_251120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_260219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_260221.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_260321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_260421.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_260521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_261021.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_261219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_270122.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_270720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_270820.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_270921.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_271020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_271120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_280120.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_280220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_280420.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_280520.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_290121.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_290319.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_290719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_290819.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_290920.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_291019.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_291119.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_300419.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_300519.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_300620.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_300719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_300720.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_301019.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_301020.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_301220.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_310321.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_310521.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_310719.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Exchanges/BSE/ExtractedBseDailyFiles/EQ_ISINCODE_311219.CSV">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

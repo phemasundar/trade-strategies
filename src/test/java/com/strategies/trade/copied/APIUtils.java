@@ -24,7 +24,7 @@ public class APIUtils {
     @Test
     @Tested
     public void percentageChangesFromMonths() throws IOException, ClassNotFoundException {
-        HistoricalDataUtils.percentageChangeFromNumberOfMonths(Exchange.BSE, Securities.PORTFOLIO, "S&P BSE 500", 2);
+        HistoricalDataUtils.percentageChangeFromNumberOfMonths(Exchange.BSE, Securities.PORTFOLIO, "S&P BSE 500", 6);
     }
 
     @Test

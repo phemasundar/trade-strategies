@@ -8,6 +8,9 @@ import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import us.codecraft.xsoup.XElements;
 import us.codecraft.xsoup.Xsoup;
 
 import java.io.IOException;
@@ -102,7 +105,7 @@ public class ApiRequests {
 
         HashMap<String, String> headers = new HashMap<>();
 
-        HttpResponse response = RestApiUtils.sendingGetRequest("https://api.bseindia.com/BseIndiaAPI/api/GetMktData/w?ordcol=NS&strType=index&strfilter="+indexName, headers);
+        HttpResponse response = RestApiUtils.sendingGetRequest("https://api.bseindia.com/BseIndiaAPI/api/GetMktData/w?ordcol=NS&strType=index&strfilter=" + indexName, headers);
 
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println(statusCode);
@@ -268,8 +271,12 @@ public class ApiRequests {
         return lrLocationDetailsResponseCustomResponse;
 
     }
+//
+//    public static String getGoogleFinanceClosePrice(Exchange exchange, String stockSymbol) throws IOException {
+//        return getGoogleFinanceDetails(exchange, stockSymbol).getLtp();
+//    }
 
-    public static String getGoogleFinanceClosePrice(Exchange exchange, String stockSymbol) throws IOException {
+    public static GoogleFinanceStockObject getGoogleFinanceDetails(Exchange exchange, String stockSymbol) throws IOException {
         HttpResponse response = RestApiUtils.sendingGetRequest("https://www.google.com/finance/quote/"
                 + stockSymbol.toUpperCase() + ":" + exchange.getSymbol(), new HashMap<>());
 
@@ -284,11 +291,31 @@ public class ApiRequests {
             Document document = Jsoup.parse(htmlResponse);
 
             String ltp = String.valueOf(Xsoup.compile("//div[@data-last-price]//span/div/div/text()").evaluate(document));
+            String peRatio = null;
+            XElements evaluate = Xsoup.compile("//div[@aria-labelledby='key-stats-heading']/div").evaluate(document);
+            Elements elements = evaluate.getElements();
+            for (Element element : elements) {
+                String attributeName = null;
+                try {
+                    Element span = element.getElementsByTag("span").get(0);
+                    attributeName = span.getElementsByTag("div").get(0).text().trim();
+                } catch (IndexOutOfBoundsException e) {
+                    e.printStackTrace();
+                    throw e;
+                }
+                if (attributeName.equalsIgnoreCase("P/E ratio")) {
+                    peRatio = element.child(1).text();
+                    break;
+                }
+            }
+//            String peRatio = String.valueOf(Xsoup.compile("//div[@aria-labelledby='key-stats-heading']//span[div[text()='P/E ratio']]/following-sibling::div/text()").evaluate(document));
 
-            return ltp.replace("₹", "")
+            ltp = ltp.replace("₹", "")
                     .replace(",", "")
                     .trim();
+            peRatio = peRatio.replace(",", "").trim();
 
+            return new GoogleFinanceStockObject(ltp, peRatio);
         } else
             System.out.println(statusCode);
         return null;

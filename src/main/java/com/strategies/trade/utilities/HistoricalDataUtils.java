@@ -1,6 +1,7 @@
 package com.strategies.trade.utilities;
 
 import com.strategies.trade.api_test_beans.CandleStick;
+import com.strategies.trade.api_test_beans.GoogleFinanceStockObject;
 import com.strategies.trade.api_test_beans.ImprovedCandleStick;
 import com.strategies.trade.api_utils.ApiRequests;
 import com.strategies.trade.test_data_beans.Exchange;
@@ -58,7 +59,7 @@ public class HistoricalDataUtils {
 
         CustomLogging.writeLog("Time taken for reading BSE data " + Duration.between(start, Instant.now()).getSeconds());
 
-         return allData;
+        return allData;
 
     }
 
@@ -93,6 +94,7 @@ public class HistoricalDataUtils {
                 "Price on " + duration + " before",
                 "Date on " + duration + " before",
                 "Latest Close Price",
+                "P/E Ratio",
                 " % Up from Low",
                 " % Down from Max",
                 " % Change from last " + duration)));
@@ -112,13 +114,17 @@ public class HistoricalDataUtils {
             CandleStick minCandleFromDate = CandleStick.getMinCandle(indHistoryData);
             CandleStick candleOnDate = CandleStick.getCandleByDate(indHistoryData, date);
 
-            double latestCloseValue;
+            double latestCloseValue, latestPERatioValue;
             //Get last traded price
             CandleStick latestCandle = CandleStick.getLatestCandle(indHistoryData);
             if (securityType == Securities.ALL) {
                 latestCloseValue = latestCandle.getClosePrice();
+                latestPERatioValue = 0D;
             } else {
-                latestCloseValue = Double.parseDouble(Objects.requireNonNull(ApiRequests.getGoogleFinanceClosePrice(exchange, latestCandle.getSymbol())));
+                GoogleFinanceStockObject googleFinanceDetails = ApiRequests.getGoogleFinanceDetails(exchange, latestCandle.getSymbol());
+                latestCloseValue = Double.parseDouble(Objects.requireNonNull(googleFinanceDetails.getLtp()));
+                latestPERatioValue = Double.parseDouble(Objects.requireNonNull(googleFinanceDetails.getPeRatio()));
+
                 /*CustomResponse<TradingviewClosePrice> closePrices = ApiRequests.getTradingViewClosePrice(exchange, allSymbolNames);
                 latestCloseValue = closePrices.getResponseObj().getData().stream()
                         .filter(item -> item.getS().substring(item.getS().indexOf(":") + 1).trim().equalsIgnoreCase(CandleStick.getSymbol(indHistoryData)))
@@ -138,7 +144,7 @@ public class HistoricalDataUtils {
             double upByPercentageFromDate = upInPriceFromDate * 100 / candleOnDate.getClosePrice();
             upByPercentageFromDate = BigDecimal.valueOf(upByPercentageFromDate).setScale(2, RoundingMode.HALF_UP).doubleValue();
 
-            System.out.println("Symbol: " + CandleStick.getSymbol(indHistoryData) + "\n\tPercentage Down: " + downByPercentageFromMax + "\n\tMax Price: " + maxCandleFromDate.getClosePrice() + "\n\tLatestClose Price: " + latestCloseValue);
+            System.out.println("\tSymbol: " + CandleStick.getSymbol(indHistoryData) + "\n\tPercentage Down: " + downByPercentageFromMax + "\n\tMax Price: " + maxCandleFromDate.getClosePrice() + "\n\tLatestClose Price: " + latestCloseValue);
             list.add(new ArrayList<>(
                     Arrays.asList(CandleStick.getSymbol(indHistoryData),
                             CandleStick.getName(indHistoryData),
@@ -149,6 +155,7 @@ public class HistoricalDataUtils {
                             String.valueOf(candleOnDate.getClosePrice()),
                             String.valueOf(candleOnDate.getDate()),
                             String.valueOf(latestCloseValue),
+                            String.valueOf(latestPERatioValue),
                             String.valueOf(upByPercentageFromLow),
                             String.valueOf(downByPercentageFromMax),
                             String.valueOf(upByPercentageFromDate))));
